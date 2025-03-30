@@ -8,4 +8,17 @@ public class ServiceProduct {
 
     private List<Product> products;
 
+    public Product createProduct(Product product){
+        return null;
+    }
+
+    public Product readProductById(long id){
+        return null;
+    }
+
+    public Product updateProduct(long id, Product product){
+        return null;
+    }
+
+    public void deleteProduct(long id){}
 }
