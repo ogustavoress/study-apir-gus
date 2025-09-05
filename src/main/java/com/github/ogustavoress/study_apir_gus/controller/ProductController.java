@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
     @PostMapping
-    public ResponseEntity<String> create(){
+    public ResponseEntity<String> create(Product product){
+        System.out.println(product.getNome());
+
         ProductService.createProduct();
+        
         return ResponseEntity.status(201).body("Product created.");
     }
     @GetMapping
